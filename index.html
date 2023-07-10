@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Woodrelease.com</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f1f1f1;
+    }
+    
+    .content {
+      text-align: center;
+    }
+    
+    .tree {
+      width: 200px;
+      height: 200px;
+      background-image: url('tree.png'); /* kaci koro*/
+      background-size: cover;
+      animation: growTree 5s ease-in-out infinite;
+    }
+    
+    @keyframes growTree {
+      0% {
+        transform: scale(0);
+      }
+      50% {
+        transform: scale(1.2);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .content {
+        font-size: 24px;
+      }
+      
+      .tree {
+        width: 150px;
+        height: 150px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <div class="tree"></div>
+    <h1>WoodRelease</h1>
+    <h2>Branching into the Future with AI.</h2>
+  </div>
+</body>
+</html>
